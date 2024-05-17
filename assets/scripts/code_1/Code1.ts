@@ -44,7 +44,7 @@ export default class NewClass extends cc.Component {
     onClickBtn(){
         var x = Number(this.inputX.string)
         var y = Number(this.inputY.string)
-        var start = 0
+        var start = 0;
         console.log("",Number.isNaN(x), Number.isNaN(y))
         if (!Number.isNaN(x) && !Number.isNaN(y) && x > 0  && y > 0 && x + y < 100) {
             this.makeNodeColorData(this._startColor, x / 100, y / 100)
